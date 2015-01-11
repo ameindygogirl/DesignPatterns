@@ -1,7 +1,7 @@
 public abstract class GameCharacter 
 {
-	GuitarChoice guitarChoice;
-	SoloChoice soloChoice;
+	private GuitarChoice guitarChoice;
+	private SoloChoice soloChoice;
 	
 	public void setGuitar(GuitarChoice gc)
 	{

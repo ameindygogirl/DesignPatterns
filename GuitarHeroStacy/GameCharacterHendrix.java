@@ -2,8 +2,8 @@ public class GameCharacterHendrix extends GameCharacter
 {
 	public GameCharacterHendrix()
 	{
-		guitarChoice = new GibsonSG();
-		soloChoice = new SmashGuitar();
+		setGuitar(new GibsonSG());
+		setSolo(new SmashGuitar());
 	}
 
 	@Override

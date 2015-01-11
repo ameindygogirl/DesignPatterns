@@ -2,8 +2,8 @@ public class GameCharacterAngus extends GameCharacter
 {
 	public GameCharacterAngus()
 	{
-		guitarChoice = new GibsonFlying();
-		soloChoice = new GuitarFire();
+		setGuitar(new GibsonFlying());
+		setSolo(new GuitarFire());
 	}
 
 	@Override

@@ -2,8 +2,8 @@ public class GameCharacterSlash extends GameCharacter
 {
 	public GameCharacterSlash()
 	{
-		guitarChoice = new Fender();
-		soloChoice = new JumpStage();
+		setGuitar(new Fender());
+		setSolo(new JumpStage());
 	}
 
 	@Override
