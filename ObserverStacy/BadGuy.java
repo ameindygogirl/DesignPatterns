@@ -4,7 +4,7 @@ import java.util.Observable;
 
 public class BadGuy implements Observer
 {
-	Observable eye;
+	private Observable eye;
 	private String name;
 	private Enemies enemies;
 	
