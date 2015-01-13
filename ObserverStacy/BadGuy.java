@@ -6,10 +6,7 @@ public class BadGuy implements Observer
 {
 	Observable eye;
 	private String name;
-	private int hobbits;
-	private int elves;
-	private int dwarves;
-	private int men;
+	private Enemies enemies;
 	
 	public BadGuy(EyeOfSauron eye, String name)
 	{
@@ -28,18 +25,14 @@ public class BadGuy implements Observer
 	{
 		if(obs instanceof EyeOfSauron)
 		{
-			EyeOfSauron eye = (EyeOfSauron)obs;
-			this.hobbits = eye.getHobbits();
-			this.elves = eye.getElves();
-			this.dwarves = eye.getDwarves();
-			this.men = eye.getMen();
+			enemies = (Enemies)arg;
 			displayEnemies();
 		}
 	}
 	
 	public void displayEnemies()
 	{
-		System.out.println(this.name + " saw "+ this.hobbits + " hobbits, " + this.elves + " elves, " + this.dwarves + " dwarves, " + this.men +" men");
+		System.out.println(this.name + " saw "+ enemies.getHobbits() + " hobbits, " + enemies.getElves() + " elves, " + enemies.getDwarves() + " dwarves, " + enemies.getMen() +" men");
 	}
 
 }
