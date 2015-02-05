@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 
 public class CourseIterator implements Iterator<Student>
@@ -26,9 +27,20 @@ public class CourseIterator implements Iterator<Student>
 	@Override
 	public Student next()
 	{
-		Student s = studentList.get(i);
-		i++;
-		return s;
+		if(hasNext())
+		{
+			Student s = studentList.get(i);
+			i++;
+			return s;
+		}
+		throw new NoSuchElementException();
+		
+	}
+	
+	@Override
+	public void remove()
+	{
+		throw new UnsupportedOperationException();
 	}
 
 }
