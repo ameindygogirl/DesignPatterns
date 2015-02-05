@@ -1,3 +1,7 @@
+/*
+Team: The Nikola Teslas
+Members: Ryan Babcock, Stacy Carlson, and Laura Humphreys 
+*/
 import java.util.ArrayList;
 import java.util.Iterator;
 
